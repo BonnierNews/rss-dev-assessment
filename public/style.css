@@ -1,0 +1,13 @@
+div.article img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+div.article {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}

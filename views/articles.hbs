@@ -1,0 +1,15 @@
+{{#if articles.length }}
+    <h2>Articles</h2>
+    {{#each articles}}
+        <div class="article">
+            <a href="{{link}}"><h3>{{ title }}</h3></a>
+            {{#if mediaContent }}
+                <img src="{{mediaContent.$.url}}" />
+            {{/if}}
+            <p>Published: {{ pubDate }}</p>
+            <p>Author: {{ creator }}</p>
+        </div>
+    {{/each}}
+{{else}}
+    <span>Hittade inga artiklar</span>
+{{/if}}
